@@ -13,7 +13,7 @@ function Rectangulo ()
     ancho=document.getElementById('Ancho');
     largo=parseInt(largo);
     ancho=parseInt(ancho);
-    resultado=((2*largo)+(2*ancho)*3);
+    resultado=((2*largo)+(2*ancho))*3;
     alert("el rectangulo es" +resultado);
 }
 function Circulo () 
@@ -25,8 +25,23 @@ function Circulo ()
 	largo=document.getElementById('Largo');
 	ancho=document.getElementById('Ancho');
 	radio=document.getElementById('Radio');
+	resultado=((radio*2)/3.14)*3;
+	alert("cantidad de alambre a comprar es" +resultado);
 }
 function Materiales () 
 {
-	
+	var largo;
+	var ancho;
+	var bolsadecal;
+	var bolsadecemento;
+	var resultado;
+	largo=document.getElementById('Largo');
+	ancho=document.getElementById('Ancho');
+	largo=parseInt(largo);
+	ancho=parseInt(ancho);
+	bolsadecemento=parseInt(bolsadecemento);
+	bolsadecal=parseInt(bolsadecal);
+	=(largo+ancho)*2;
+	=(largo+ancho)*3;
+	alert("bolsa de cemento que se necesitan" + bolsadecemento "bolsa de cal que se necesitan" +bolsadecal);
 }
