@@ -26,19 +26,47 @@ function CalcularPrecio ()
     preciodescuento=preciobruto*0.5;
   	alert("El precio con descuento es" +preciobruto*0.5);
   }
-  else
-  {
-  	if(cantidad == 5)
-  		{
-           if(marca=="ArgentinaLuz")
-  		{
-  			preciodescuento=preciobruto*0.4;
-  			
-  		}
-  		
-  		}
-  		
-  }
+  
+  
+    if(cantidad == 5)
+       {
+          if(marca == "ArgentinaLuz")
+          {
+             preciodescuento=preciobruto*0.4;
+          }
 
+        } 
+
+    if(cantidad == 4)
+        {
+        if(marca == "ArgentinaLuz" )
+          {
+            preciodescuento=preciobruto*0.25;
+
+          }
+                    
+         
+        if(marca=="FelipeLamparas")
+            {
+                preciodescuento=preciobruto*0.25;
+            }    
+        if(!(marca=="FelipeLamparas"&&marca=="ArgentinaLuz"))
+        {
+               preciodescuento=preciobruto*0.20;
+        }
+
+        }           
+      
+          
+              
+                  
+                       
+                       
+  
+  	 
+                       
+
+          
+        
     document.getElementById('precioDescuento').value=preciodescuento;
 }
